@@ -347,3 +347,23 @@ footer{
   font-weight: normal;
   font-style: italic;
 }
+
+.row{
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+article{
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside{
+  /* Default 
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto; */
+  flex: 0 0 300px;
+
+}
