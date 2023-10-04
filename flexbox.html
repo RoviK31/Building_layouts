@@ -36,14 +36,35 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 34px;
+        font-size: 32px;
         margin: 40px;
 
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center  ;
+        gap:30px;
       }
+
+      /* selecting all flex items */
+      /* .el{
+      margin-right: 30px;
+      } */
+
+      .el--1{
+        align-self: flex-start;
+      }
+      /* by default the order of the flex-items are 0 */
+      .el--5{
+        align-self: stretch;
+        /* first item */
+        order:1;
+      }
+      .el--6{
+        /* last item */
+        order:-1;
+      }
+      
     </style>
   </head>
   <body>
@@ -54,8 +75,8 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
