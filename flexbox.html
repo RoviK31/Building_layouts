@@ -42,14 +42,24 @@
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: center  ;
-        gap:30px;
+        justify-content: flex-start ;
+        gap:10px;
       }
 
       /* selecting all flex items */
-      /* .el{
-      margin-right: 30px;
-      } */
+      .el{
+      /* Default 
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto; */
+      /* flex-basis: 100px; */
+      flex-shrink: 0;
+      flex-grow: 1;
+      /* flex property shorthand for grow shrink basis */
+      flex: 1;
+    }
+
+
 
       .el--1{
         align-self: flex-start;
