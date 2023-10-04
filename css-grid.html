@@ -31,14 +31,14 @@
       .el--8 {
         background-color: crimson;
       }
-
+      
       .container--1 {
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 20px;
         margin: 40px;
-
+        
         /* CSS GRID */
         display: grid;
         /* grid-template-columns: 200px 200px 1fr 1fr; */
@@ -49,6 +49,7 @@
         /* gap: 30px; */
         column-gap: 10px;
         row-gap: 40px;
+        display: none;
       }
       .el--8{
         grid-column: 2 / 3;
@@ -63,11 +64,10 @@
       }
 
       .el--6{
-
+        grid-row: 3/5;
       }
 
       .container--2 {
-        display: none;
 
         /* STARTER */
         font-family: sans-serif;
@@ -79,6 +79,23 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* ALigning traks inside container: distribute empty space */
+        justify-content: center;
+        /* justify-content: space-between; */
+
+        align-content: center;
+
+        /* Aligning items INSIDE cells: moving items arou nd inside cells */
+        align-items: end;
+        justify-items: end;
+      }
+
+      .el--3{
+        align-self:end;
       }
 
     </style>
