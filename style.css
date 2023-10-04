@@ -285,3 +285,14 @@ h1{
 nav{
   float: right;
 }
+
+.clear{
+  clear: both;
+}
+
+/* clear fix hack */
+.clearfix::after{
+  content : "";
+  clear: both;
+  display: block;
+}
